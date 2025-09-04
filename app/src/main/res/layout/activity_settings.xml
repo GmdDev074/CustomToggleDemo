@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Wi-Fi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="WIFI" />
+
+            <TextView
+                android:id="@+id/text_wifi"
+                android:text="Wi-Fi is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Bluetooth -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="BLUETOOTH" />
+
+            <TextView
+                android:id="@+id/text_bt"
+                android:text="Bluetooth is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Dark Mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_darkmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="DARK_MODE" />
+
+            <TextView
+                android:id="@+id/text_darkmode"
+                android:text="Dark Mode is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="LOCATION" />
+
+            <TextView
+                android:id="@+id/text_location"
+                android:text="Location is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Mobile Data -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="MOBILE_DATA" />
+
+            <TextView
+                android:id="@+id/text_data"
+                android:text="Mobile Data is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Airplane Mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_airplane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="AIRPLANE_MODE" />
+
+            <TextView
+                android:id="@+id/text_airplane"
+                android:text="Airplane Mode is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Do Not Disturb -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_dnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="DO_NOT_DISTURB" />
+
+            <TextView
+                android:id="@+id/text_dnd"
+                android:text="Do Not Disturb is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Notifications -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="NOTIFICATIONS"/>
+
+            <TextView
+                android:id="@+id/text_notifications"
+                android:text="Notifications Disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Sound -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="SOUND"/>
+
+            <TextView
+                android:id="@+id/text_sound"
+                android:text="Sound is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Vibration -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_vibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="VIBRATION"/>
+
+            <TextView
+                android:id="@+id/text_vibration"
+                android:text="Vibration is OFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Auto-update apps -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_autoupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="AUTO_UPDATE"/>
+
+            <TextView
+                android:id="@+id/text_autoupdate"
+                android:text="Auto-update Disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Save password / Auto login -->
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_autologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="SAVE_PASSWORD"/>
+
+            <TextView
+                android:id="@+id/text_autologin"
+                android:text="Auto Login Disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>-->
+
+        <!-- Biometrics -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_biometrics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="BIOMETRICS"/>
+
+            <TextView
+                android:id="@+id/text_biometrics"
+                android:text="Biometrics Disabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Layout mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp">
+
+            <com.example.customtoggle.demo.toggle_helper.CustomToggle
+                android:id="@+id/toggle_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleType="COMPACT_LAYOUT"/>
+
+            <TextView
+                android:id="@+id/text_layout"
+                android:text="Compact Layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

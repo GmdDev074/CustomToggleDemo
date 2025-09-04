@@ -1,0 +1,22 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/btn_settings" android:text="1. System / App Settings" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_app_prefs" android:text="2. App Preferences" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_features" android:text="3. Feature Controls in Apps" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_privacy" android:text="4. Privacy &amp; Security" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_media" android:text="5. Media / Device Controls" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_smart_home" android:text="6. Smart Home / IoT" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_profile" android:text="7. User Profile / Account" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_developer" android:text="8. Developer / Advanced" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_commerce" android:text="9. Commerce / E-Commerce" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btn_fun" android:text="10. Fun / Creative Uses" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

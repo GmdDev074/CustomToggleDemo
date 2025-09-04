@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToggle">
+        <attr name="toggleType" format="enum">
+            <!-- Map all ToggleType enum values to integers -->
+            <enum name="WIFI" value="0"/>
+            <enum name="BLUETOOTH" value="1"/>
+            <enum name="DARK_MODE" value="2"/>
+            <enum name="LOCATION" value="3"/>
+            <enum name="MOBILE_DATA" value="4"/>
+            <enum name="AIRPLANE_MODE" value="5"/>
+            <enum name="DO_NOT_DISTURB" value="6"/>
+            <enum name="NOTIFICATIONS" value="7"/>
+            <enum name="SOUND" value="8"/>
+            <enum name="VIBRATION" value="9"/>
+            <enum name="AUTO_UPDATE" value="10"/>
+            <enum name="SAVE_PASSWORD" value="11"/>
+            <enum name="BIOMETRICS" value="12"/>
+            <enum name="COMPACT_LAYOUT" value="13"/>
+            <enum name="GPS_TRACKING" value="14"/>
+            <enum name="BACKGROUND_SYNC" value="15"/>
+            <enum name="CLOUD_BACKUP" value="16"/>
+            <enum name="ADS_PERSONALIZATION" value="17"/>
+            <enum name="REMEMBER_ME" value="18"/>
+            <enum name="OFFLINE_MODE" value="19"/>
+            <enum name="PRIVACY_LOCATION" value="20"/>
+            <enum name="CAMERA_MIC" value="21"/>
+            <enum name="ONLINE_STATUS" value="22"/>
+            <enum name="READ_RECEIPTS" value="23"/>
+            <enum name="TWO_FACTOR_AUTH" value="24"/>
+            <enum name="INCOGNITO_MODE" value="25"/>
+            <enum name="AUTOPLAY" value="26"/>
+            <enum name="WIFI_ONLY_DOWNLOAD" value="27"/>
+            <enum name="HIGH_QUALITY_STREAMING" value="28"/>
+            <enum name="BACKGROUND_PLAYBACK" value="29"/>
+            <enum name="SUBTITLES" value="30"/>
+            <enum name="CAMERA_FLASH" value="31"/>
+            <enum name="CAMERA_FILTERS" value="32"/>
+            <enum name="LIGHT" value="33"/>
+            <enum name="FAN" value="34"/>
+            <enum name="AC_HEATER" value="35"/>
+            <enum name="DOOR_LOCK" value="36"/>
+            <enum name="SECURITY_ALARM" value="37"/>
+            <enum name="SMART_PLUG" value="38"/>
+            <enum name="SHOW_EMAIL" value="39"/>
+            <enum name="PRIVATE_PROFILE" value="40"/>
+            <enum name="MESSAGE_NOTIFICATIONS" value="41"/>
+            <enum name="FRIEND_SUGGESTIONS" value="42"/>
+            <enum name="ACTIVE_STATUS" value="43"/>
+            <enum name="DEBUG_MODE" value="44"/>
+            <enum name="LOGS" value="45"/>
+            <enum name="MOCK_LOCATIONS" value="46"/>
+            <enum name="BACKGROUND_TASKS" value="47"/>
+            <enum name="BATTERY_SAVER" value="48"/>
+            <enum name="ORDER_TRACKING" value="49"/>
+            <enum name="ONE_CLICK_CHECKOUT" value="50"/>
+            <enum name="OFFERS_NOTIFICATIONS" value="51"/>
+            <enum name="SAVE_CARD" value="52"/>
+            <enum name="GAME_MODE" value="53"/>
+            <enum name="UNIT_SWITCH" value="54"/>
+            <enum name="LANGUAGE_SWITCH" value="55"/>
+            <enum name="THEME_TOGGLE" value="56"/>
+            <enum name="EMOJI_REACTIONS" value="57"/>
+            <enum name="PARENTAL_CONTROLS" value="58"/>
+        </attr>
+    </declare-styleable>
+</resources>
