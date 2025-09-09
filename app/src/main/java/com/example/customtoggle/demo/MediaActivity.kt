@@ -4,59 +4,63 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.customtoggle.demo.toggle_helper.CustomToggle
+import com.example.customtoggle.demo.toggle_helper.ToggleType
 
 class MediaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_media)
 
-        // Autoplay
-        val toggleAutoplay = findViewById<CustomToggle>(R.id.toggle_autoplay)
-        val textAutoplay = findViewById<TextView>(R.id.text_autoplay)
-        toggleAutoplay.setOnToggleChangedListener { isOn ->
-            textAutoplay.text = if (isOn) "Autoplay Enabled" else "Autoplay Disabled"
+        bindToggle(R.id.toggle_autoplay, R.id.text_autoplay, "Autoplay", ToggleType.AUTOPLAY, false)
+        bindToggle(R.id.toggle_wifi_only, R.id.text_wifi_only, "Wi-Fi Only", ToggleType.WIFI_ONLY_DOWNLOAD, false)
+        bindToggle(R.id.toggle_high_quality, R.id.text_high_quality, "High Quality Streaming", ToggleType.HIGH_QUALITY_STREAMING, false)
+        bindToggle(R.id.toggle_background_playback, R.id.text_background_playback, "Background Playback", ToggleType.BACKGROUND_PLAYBACK, false)
+        bindToggle(R.id.toggle_subtitles, R.id.text_subtitles, "Subtitles", ToggleType.SUBTITLES, false)
+        bindToggle(R.id.toggle_flash, R.id.text_flash, "Flash", ToggleType.CAMERA_FLASH, false)
+        bindToggle(R.id.toggle_filters, R.id.text_filters, "Filters", ToggleType.CAMERA_FILTERS, false)
+    }
+
+    private fun bindToggle(
+        toggleId: Int,
+        textId: Int,
+        label: String,
+        type: ToggleType,
+        initialState: Boolean
+    ) {
+        val toggle = findViewById<CustomToggle>(toggleId)
+        val text = findViewById<TextView>(textId)
+
+        // assign correct type
+        toggle.toggleType = type
+
+        // set initial state
+        toggle.setInitialState(initialState)
+
+        // update text dynamically when toggled
+        toggle.setOnToggleChangedListener { isOn ->
+            val statusText = when (label) {
+                "Autoplay" -> if (isOn) "Autoplay Enabled" else "Autoplay Disabled"
+                "Wi-Fi Only" -> if (isOn) "Download only on Wi-Fi" else "Download on Mobile Data Allowed"
+                "High Quality Streaming" -> if (isOn) "High-Quality Streaming Enabled" else "Standard Quality Streaming"
+                "Background Playback" -> if (isOn) "Background Playback Enabled" else "Background Playback Disabled"
+                "Subtitles" -> if (isOn) "Subtitles Enabled" else "Subtitles Disabled"
+                "Flash" -> if (isOn) "Flash ON" else "Flash OFF"
+                "Filters" -> if (isOn) "Filters Enabled" else "Filters Disabled"
+                else -> "$label is ${if (isOn) "ON" else "OFF"}"
+            }
+            text.text = statusText
         }
 
-        // Wi-Fi Only
-        val toggleWifi = findViewById<CustomToggle>(R.id.toggle_wifi_only)
-        val textWifi = findViewById<TextView>(R.id.text_wifi_only)
-        toggleWifi.setOnToggleChangedListener { isOn ->
-            textWifi.text = if (isOn) "Download only on Wi-Fi" else "Download on Mobile Data Allowed"
-        }
-
-        // High Quality Streaming
-        val toggleHQ = findViewById<CustomToggle>(R.id.toggle_high_quality)
-        val textHQ = findViewById<TextView>(R.id.text_high_quality)
-        toggleHQ.setOnToggleChangedListener { isOn ->
-            textHQ.text = if (isOn) "High-Quality Streaming Enabled" else "Standard Quality Streaming"
-        }
-
-        // Background Playback
-        val toggleBG = findViewById<CustomToggle>(R.id.toggle_background_playback)
-        val textBG = findViewById<TextView>(R.id.text_background_playback)
-        toggleBG.setOnToggleChangedListener { isOn ->
-            textBG.text = if (isOn) "Background Playback Enabled" else "Background Playback Disabled"
-        }
-
-        // Subtitles
-        val toggleSubs = findViewById<CustomToggle>(R.id.toggle_subtitles)
-        val textSubs = findViewById<TextView>(R.id.text_subtitles)
-        toggleSubs.setOnToggleChangedListener { isOn ->
-            textSubs.text = if (isOn) "Subtitles Enabled" else "Subtitles Disabled"
-        }
-
-        // Flash
-        val toggleFlash = findViewById<CustomToggle>(R.id.toggle_flash)
-        val textFlash = findViewById<TextView>(R.id.text_flash)
-        toggleFlash.setOnToggleChangedListener { isOn ->
-            textFlash.text = if (isOn) "Flash ON" else "Flash OFF"
-        }
-
-        // Filters
-        val toggleFilters = findViewById<CustomToggle>(R.id.toggle_filters)
-        val textFilters = findViewById<TextView>(R.id.text_filters)
-        toggleFilters.setOnToggleChangedListener { isOn ->
-            textFilters.text = if (isOn) "Filters Enabled" else "Filters Disabled"
+        // set initial text
+        text.text = when (label) {
+            "Autoplay" -> if (initialState) "Autoplay Enabled" else "Autoplay Disabled"
+            "Wi-Fi Only" -> if (initialState) "Download only on Wi-Fi" else "Download on Mobile Data Allowed"
+            "High Quality Streaming" -> if (initialState) "High-Quality Streaming Enabled" else "Standard Quality Streaming"
+            "Background Playback" -> if (initialState) "Background Playback Enabled" else "Background Playback Disabled"
+            "Subtitles" -> if (initialState) "Subtitles Enabled" else "Subtitles Disabled"
+            "Flash" -> if (initialState) "Flash ON" else "Flash OFF"
+            "Filters" -> if (initialState) "Filters Enabled" else "Filters Disabled"
+            else -> "$label is ${if (initialState) "ON" else "OFF"}"
         }
     }
 }

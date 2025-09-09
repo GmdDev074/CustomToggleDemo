@@ -131,85 +131,192 @@ class CustomToggle @JvmOverloads constructor(
 
             // 3. Feature Controls
             ToggleType.GPS_TRACKING -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_gps_on, R.drawable.ic_gps_off)
             ToggleType.BACKGROUND_SYNC -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_sync, R.drawable.ic_sync_blocked)
             ToggleType.CLOUD_BACKUP -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_back_up, R.drawable.ic_back_up_blocked)
             ToggleType.ADS_PERSONALIZATION -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_ad, R.drawable.ic_no_block)
             ToggleType.REMEMBER_ME -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_remember, R.drawable.ic_no_remember)
             ToggleType.OFFLINE_MODE -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+                R.drawable.ic_wifi_on, R.drawable.ic_wifi_off)
 
             // 4. Privacy & Security
-            ToggleType.PRIVACY_LOCATION -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_location_on, R.drawable.ic_location_off)
-            ToggleType.CAMERA_MIC -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.ONLINE_STATUS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.READ_RECEIPTS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.TWO_FACTOR_AUTH -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.INCOGNITO_MODE -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
+            ToggleType.PRIVACY_LOCATION -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_location_on, R.drawable.ic_location_off
+            )
+
+            ToggleType.CAMERA_MIC -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_camera_mic_on, R.drawable.ic_camera_mic_off
+            )
+
+            ToggleType.ONLINE_STATUS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_wifi_on, R.drawable.ic_wifi_off
+            )
+
+            ToggleType.READ_RECEIPTS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_read_receipt_on, R.drawable.ic_read_receipt_off
+            )
+
+            ToggleType.TWO_FACTOR_AUTH -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_security_on, R.drawable.ic_security_off
+            )
+
+            ToggleType.INCOGNITO_MODE -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_incognito_on, R.drawable.ic_incognito_off
+            )
+
 
             // 5. Media/Device Controls
-            ToggleType.AUTOPLAY -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.WIFI_ONLY_DOWNLOAD -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_wifi_on, R.drawable.ic_wifi_off)
-            ToggleType.HIGH_QUALITY_STREAMING -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.BACKGROUND_PLAYBACK -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.ic_bell_on, R.drawable.ic_bell_on)
-            ToggleType.SUBTITLES -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.CAMERA_FLASH -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.CAMERA_FILTERS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.AUTOPLAY -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_autoplay_on, R.drawable.ic_autoplay_off
+            )
+
+            ToggleType.WIFI_ONLY_DOWNLOAD -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_wifi_on, R.drawable.ic_wifi_off
+            )
+
+            ToggleType.HIGH_QUALITY_STREAMING -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.BACKGROUND_PLAYBACK -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.SUBTITLES -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_subtitles_on, R.drawable.ic_subtitles_off
+            )
+
+            ToggleType.CAMERA_FLASH -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_flash_on, R.drawable.ic_flash_off
+            )
+
+            ToggleType.CAMERA_FILTERS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_filter_on, R.drawable.ic_filter_off
+            )
+
 
             // 6. Smart Home / IoT
-            ToggleType.LIGHT -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.FAN -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.AC_HEATER -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.DOOR_LOCK -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.SECURITY_ALARM -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.SMART_PLUG -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.LIGHT -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_light_on, R.drawable.ic_light_off
+            )
+
+            ToggleType.FAN -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_fan_on, R.drawable.ic_fan_off
+            )
+
+            ToggleType.AC_HEATER -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_ac_heater_on, R.drawable.ic_ac_heater_off
+            )
+
+            ToggleType.DOOR_LOCK -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_lock_on, R.drawable.ic_lock_off
+            )
+
+            ToggleType.SECURITY_ALARM -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_alarm_on, R.drawable.ic_alarm_off
+            )
+
+            ToggleType.SMART_PLUG -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_plug_on, R.drawable.ic_plug_off
+            )
+
 
             // 7. User Profile / Account
-            ToggleType.SHOW_EMAIL -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.PRIVATE_PROFILE -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.MESSAGE_NOTIFICATIONS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.FRIEND_SUGGESTIONS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.ACTIVE_STATUS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.SHOW_EMAIL -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_email_visible_on, R.drawable.ic_email_visible_off
+            )
+
+            ToggleType.PRIVATE_PROFILE -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_lock_on, R.drawable.ic_lock_off
+            )
+
+            ToggleType.MESSAGE_NOTIFICATIONS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_alarm_on, R.drawable.ic_alarm_off
+            )
+
+            ToggleType.FRIEND_SUGGESTIONS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_friend_on, R.drawable.ic_friend_off
+            )
+
+            ToggleType.ACTIVE_STATUS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_active_on, R.drawable.ic_active_off
+            )
+
 
             // 8. Developer / Advanced
-            ToggleType.DEBUG_MODE -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.LOGS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.MOCK_LOCATIONS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.BACKGROUND_TASKS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
-            ToggleType.BATTERY_SAVER -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
-                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.DEBUG_MODE -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_debug_on, R.drawable.ic_debug_off
+            )
+
+            ToggleType.LOGS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.MOCK_LOCATIONS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_gps_on, R.drawable.ic_gps_off
+            )
+
+            ToggleType.BACKGROUND_TASKS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.BATTERY_SAVER -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_flash_on, R.drawable.ic_flash_off
+            )
+
+            ToggleType.STRICT_MODE -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.ic_lock_on, R.drawable.ic_lock_off
+            )
+
+            ToggleType.LAYOUT_BOUNDS -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.KEEP_AWAKE -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
+            ToggleType.GPU_PROFILING -> setDrawables(
+                R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_off
+            )
+
 
             // 9. Commerce / E-Commerce
             ToggleType.ORDER_TRACKING -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
@@ -219,6 +326,10 @@ class CustomToggle @JvmOverloads constructor(
             ToggleType.OFFERS_NOTIFICATIONS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
                 R.drawable.bg_track_on, R.drawable.bg_track_on)
             ToggleType.SAVE_CARD -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.WISHLIST_SYNC -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
+                R.drawable.bg_track_on, R.drawable.bg_track_on)
+            ToggleType.PRICE_DROP_ALERTS -> setDrawables(R.drawable.bg_track_on, R.drawable.bg_track_off,
                 R.drawable.bg_track_on, R.drawable.bg_track_on)
 
             // 10. Fun / Creative

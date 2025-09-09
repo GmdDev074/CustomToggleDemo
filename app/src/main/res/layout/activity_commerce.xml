@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +21,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_order_tracking"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="ORDER_TRACKING"/>
 
             <TextView
                 android:id="@+id/text_order_tracking"
@@ -42,7 +44,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_checkout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="ONE_CLICK_CHECKOUT"/>
 
             <TextView
                 android:id="@+id/text_checkout"
@@ -64,7 +67,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_offers"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="OFFERS_NOTIFICATIONS"/>
 
             <TextView
                 android:id="@+id/text_offers"
@@ -86,7 +90,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_card"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="SAVE_CARD"/>
 
             <TextView
                 android:id="@+id/text_card"
@@ -108,7 +113,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_wishlist"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="SAVE_CARD"/>
 
             <TextView
                 android:id="@+id/text_wishlist"
@@ -130,7 +136,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_price_alerts"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="OFFERS_NOTIFICATIONS"/>
 
             <TextView
                 android:id="@+id/text_price_alerts"

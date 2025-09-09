@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +21,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_email"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="SHOW_EMAIL"/>
 
             <TextView
                 android:id="@+id/text_email"
@@ -42,7 +44,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_privacy"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="PRIVATE_PROFILE"/>
 
             <TextView
                 android:id="@+id/text_privacy"
@@ -64,7 +67,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_notifications"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="MESSAGE_NOTIFICATIONS"/>
 
             <TextView
                 android:id="@+id/text_notifications"
@@ -86,7 +90,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_friends"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="FRIEND_SUGGESTIONS"/>
 
             <TextView
                 android:id="@+id/text_friends"
@@ -108,7 +113,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_status"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="ACTIVE_STATUS"/>
 
             <TextView
                 android:id="@+id/text_status"

@@ -10,7 +10,13 @@ class FunActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fun)
 
-        setupToggle(R.id.toggle_game_mode, R.id.text_game_mode, "Game Mode is ON", "Game Mode is OFF")
+        // Game Mode
+        setupToggle(
+            R.id.toggle_game_mode,
+            R.id.text_game_mode,
+            "Game Mode is ON",
+            "Game Mode is OFF"
+        )
 
         // Units toggle (Km/°C <-> Miles/°F)
         val toggleUnits = findViewById<CustomToggle>(R.id.toggle_units)
@@ -33,8 +39,21 @@ class FunActivity : AppCompatActivity() {
             textTheme.text = if (isOn) "Theme: Dark / AMOLED" else "Theme: Light"
         }
 
-        setupToggle(R.id.toggle_emoji, R.id.text_emoji, "Emoji Reactions Enabled", "Emoji Reactions Disabled")
-        setupToggle(R.id.toggle_parental, R.id.text_parental, "Parental Controls Enabled", "Parental Controls Disabled")
+        // Emoji Reactions
+        setupToggle(
+            R.id.toggle_emoji,
+            R.id.text_emoji,
+            "Emoji Reactions Enabled",
+            "Emoji Reactions Disabled"
+        )
+
+        // Parental Controls
+        setupToggle(
+            R.id.toggle_parental,
+            R.id.text_parental,
+            "Parental Controls Enabled",
+            "Parental Controls Disabled"
+        )
     }
 
     private fun setupToggle(toggleId: Int, textId: Int, onText: String, offText: String) {

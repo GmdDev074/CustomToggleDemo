@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +21,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_gps"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="GPS_TRACKING"/>
 
             <TextView
                 android:id="@+id/text_gps"
@@ -42,7 +44,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_sync"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="BACKGROUND_SYNC"/>
 
             <TextView
                 android:id="@+id/text_sync"
@@ -64,7 +67,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_backup"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="CLOUD_BACKUP"/>
 
             <TextView
                 android:id="@+id/text_backup"
@@ -86,7 +90,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_ads"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="ADS_PERSONALIZATION"/>
 
             <TextView
                 android:id="@+id/text_ads"
@@ -108,7 +113,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_remember"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="REMEMBER_ME"/>
 
             <TextView
                 android:id="@+id/text_remember"
@@ -130,7 +136,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_offline"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="OFFLINE_MODE"/>
 
             <TextView
                 android:id="@+id/text_offline"

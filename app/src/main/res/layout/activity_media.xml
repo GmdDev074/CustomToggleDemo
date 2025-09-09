@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +21,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_autoplay"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="AUTOPLAY"/>
 
             <TextView
                 android:id="@+id/text_autoplay"
@@ -42,7 +44,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_wifi_only"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="WIFI_ONLY_DOWNLOAD" />
 
             <TextView
                 android:id="@+id/text_wifi_only"
@@ -64,7 +67,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_high_quality"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="HIGH_QUALITY_STREAMING"/>
 
             <TextView
                 android:id="@+id/text_high_quality"
@@ -86,7 +90,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_background_playback"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="BACKGROUND_PLAYBACK"/>
 
             <TextView
                 android:id="@+id/text_background_playback"
@@ -108,7 +113,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_subtitles"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="SUBTITLES"/>
 
             <TextView
                 android:id="@+id/text_subtitles"
@@ -130,7 +136,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_flash"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="CAMERA_FLASH"/>
 
             <TextView
                 android:id="@+id/text_flash"
@@ -152,7 +159,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_filters"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="CAMERA_FILTERS"/>
 
             <TextView
                 android:id="@+id/text_filters"

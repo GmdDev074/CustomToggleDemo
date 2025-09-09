@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +21,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_location_access"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="PRIVACY_LOCATION"/>
 
             <TextView
                 android:id="@+id/text_location_access"
@@ -42,7 +44,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_camera_mic"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="CAMERA_MIC"/>
 
             <TextView
                 android:id="@+id/text_camera_mic"
@@ -64,7 +67,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_online_status"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="ONLINE_STATUS"/>
 
             <TextView
                 android:id="@+id/text_online_status"
@@ -86,7 +90,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_read_receipts"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="READ_RECEIPTS"/>
 
             <TextView
                 android:id="@+id/text_read_receipts"
@@ -108,7 +113,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_2fa"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="TWO_FACTOR_AUTH"/>
 
             <TextView
                 android:id="@+id/text_2fa"
@@ -130,7 +136,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_incognito"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="INCOGNITO_MODE"/>
 
             <TextView
                 android:id="@+id/text_incognito"
@@ -153,7 +160,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_app_lock"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="BIOMETRICS"/>
 
             <TextView
                 android:id="@+id/text_app_lock"
@@ -175,7 +183,8 @@
             <com.example.customtoggle.demo.toggle_helper.CustomToggle
                 android:id="@+id/toggle_typing_indicator"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                app:toggleType="OFFLINE_MODE"/>
 
             <TextView
                 android:id="@+id/text_typing_indicator"
