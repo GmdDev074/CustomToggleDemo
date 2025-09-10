@@ -1,8 +1,9 @@
-package com.example.customtoggle.demo
+package com.example.customtoggle.demo.activities
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.customtoggle.demo.R
 import com.example.customtoggle.demo.toggle_helper.CustomToggle
 
 class FunActivity : AppCompatActivity() {

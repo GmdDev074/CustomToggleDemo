@@ -12,37 +12,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomToggleDemo">
         <activity
-            android:name=".FunActivity"
+            android:name=".activities.FunActivity"
             android:exported="false" />
         <activity
-            android:name=".CommerceActivity"
+            android:name=".activities.CommerceActivity"
             android:exported="false" />
         <activity
-            android:name=".DeveloperActivity"
+            android:name=".activities.DeveloperActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".activities.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".SmartHomeActivity"
+            android:name=".activities.SmartHomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MediaActivity"
+            android:name=".activities.MediaActivity"
             android:exported="false" />
         <activity
-            android:name=".PrivacyActivity"
+            android:name=".activities.PrivacyActivity"
             android:exported="false" />
         <activity
-            android:name=".FeaturesActivity"
+            android:name=".activities.FeaturesActivity"
             android:exported="false" />
         <activity
-            android:name=".AppPreferencesActivity"
+            android:name=".activities.AppPreferencesActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
