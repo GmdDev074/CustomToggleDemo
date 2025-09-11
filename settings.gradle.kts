@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CustomToggleDemo"
 include(":app")
- 
+include(":app:mylibrary")
