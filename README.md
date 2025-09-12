@@ -1,5 +1,7 @@
 # CustomToggle Library 🎛️
 
+![License](https://img.shields.io/github/license/GmdDev074/CustomToggleDemo)
+
 [![](https://jitpack.io/v/GmdDev074/CustomToggleDemo.svg)](https://jitpack.io/#GmdDev074/CustomToggleDemo)
 
 ![GitHub stars](https://img.shields.io/github/stars/GmdDev074/CustomToggleDemo?style=social)
@@ -288,3 +290,8 @@ It only takes a second, but it really motivates us to keep improving this projec
 
 [![GitHub Stars](https://img.shields.io/github/stars/GmdDev074/CustomToggleDemo?style=social)](https://github.com/GmdDev074/CustomToggleDemo/stargazers)
 
+
+## 📜 License
+
+This project is licensed under the [Apache License 2.0](./LICENSE).  
+See the [NOTICE](./NOTICE) file for copyright details.
