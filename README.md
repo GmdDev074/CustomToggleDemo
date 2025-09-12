@@ -293,5 +293,5 @@ It only takes a second, but it really motivates us to keep improving this projec
 
 ## 📜 License
 
-This project is licensed under the [Apache License 2.0](./LICENSE).  
-See the [NOTICE](./NOTICE) file for copyright details.
+This project is licensed under the [Apache License 2.0](LICENSE.md).  
+See the [NOTICE](NOTICE.md) file for copyright details.
